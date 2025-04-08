@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import SidebarTabs from "./SidebarTabs";
-import { GitHub, LinkedIn } from "@mui/icons-material";
+import { Email, GitHub, LinkedIn, Phone } from "@mui/icons-material";
 import avatar from "../../assets/avatar.jpeg";
 
 const Sidebar = () => {
@@ -53,12 +53,33 @@ const Sidebar = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
+          justifyContent: "center",
           backgroundColor: "#494949",
           padding: "1rem",
+          gap: "1rem",
         }}
       >
-        <Typography variant="caption">darwinchow98@gmail.com</Typography>
-        <Typography variant="caption">+61 415268812</Typography>
+        <Box
+          sx={{
+            display: "flex",
+            gap: "1rem",
+            justifyContent: "center",
+          }}
+        >
+          <Email fontSize="small" />
+          <Typography variant="body2">darwinchow98@gmail.com</Typography>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            gap: "1rem",
+            justifyContent: "center",
+          }}
+        >
+          <Phone fontSize="small" />
+          <Typography variant="body2">+61 415268812</Typography>
+        </Box>
       </Box>
       <CardActions
         sx={{ display: "flex", justifyContent: "center", padding: "1rem" }}

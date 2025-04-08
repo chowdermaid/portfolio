@@ -17,6 +17,7 @@ const SidebarTabs = () => {
 
   return (
     <Tabs
+      sx={{ alignSelf: "center" }}
       value={value}
       onChange={handleChange}
       orientation="vertical"
