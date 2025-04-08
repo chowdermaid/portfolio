@@ -4,7 +4,7 @@ import { Box, Typography, Tooltip, Button, Divider } from "@mui/material";
 const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume-darwin.pdf";
+    link.href = import.meta.env.BASE_URL + "/resume-darwin.pdf";
     link.download = "resume-darwin.pdf";
     link.target = "_blank";
     link.rel = "noopener noreferrer";
