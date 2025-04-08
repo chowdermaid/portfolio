@@ -7,7 +7,7 @@
 - Vite
 - MUI
 
-## To run this:
+## Running on local machine:
 
 ```
 npm install
